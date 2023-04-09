@@ -1,0 +1,8 @@
+#plan {
+	background-color: coral;
+}
+
+li> a:hover:not(#planlink) {
+	color: yellow;
+	background-color: blue;
+}

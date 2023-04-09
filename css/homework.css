@@ -1,0 +1,8 @@
+#homework {
+	background-color: coral;
+}
+
+li> a:hover:not(#homeworklink) {
+	color: yellow;
+	background-color: blue;
+}

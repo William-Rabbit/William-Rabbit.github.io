@@ -1,0 +1,8 @@
+#play {
+	background-color: coral;
+}
+
+li> a:hover:not(#playlink) {
+	color: yellow;
+	background-color: blue;
+}
