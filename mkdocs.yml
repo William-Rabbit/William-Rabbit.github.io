@@ -313,6 +313,9 @@ nav:
     - 文章编写帮助: ABOUT/help.md
     - 网站构建: ABOUT/build.md
     - 测试文档: ABOUT/test.md
+  - 文件:
+    - FILE/index.md
+    - FILE/001.pdf
 
 # [UI]
 ## [top]
