@@ -317,7 +317,8 @@ nav:
 # [UI]
 ## [top]
 theme:
-  name: material
+#  name: material
+  name: readthedocs
   palette:
     - scheme: default # 日间模式
       primary: indigo # 上方的
