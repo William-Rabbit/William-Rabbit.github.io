@@ -315,7 +315,7 @@ nav:
     - 测试文档: ABOUT/test.md
   - 文件:
     - FILE/index.md
-    - FILE/001.pdf
+    - 智能控制: FILE/001.pdf
 
 # [UI]
 ## [top]
