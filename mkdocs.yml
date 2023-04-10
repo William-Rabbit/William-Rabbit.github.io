@@ -1,0 +1,8 @@
+site_name: Rabbit
+site_url: https://example.com/
+#site_url: https://www.baidu.com/
+nav:
+    - Home: index.md
+    - About: about.md
+#theme: readthedocs
+logo: 'img/logo.jpg'
