@@ -1,8 +1,0 @@
-#study {
-	background-color: coral;
-}
-
-li> a:hover:not(#studylink) {
-	color: yellow;
-	background-color: blue;
-}
