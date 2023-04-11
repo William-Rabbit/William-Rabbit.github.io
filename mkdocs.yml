@@ -315,36 +315,42 @@ nav:
     - 测试文档: ABOUT/test.md
   - 文件:
     - FILE/index.md
-    - 智能控制: FILE/001.pdf
 
 # [UI]
 ## [top]
-theme:
-  name: material
-  palette:
+theme: # 主题
+  name: material # 主题名称
+  palette: # 主题样式
     - scheme: default # 日间模式
-      primary: indigo # 上方的
+      primary: light blue # 主题颜色
       accent: orange # 链接等可交互元件的高亮色
-      toggle:
+      toggle: # 切换模式按钮
         icon: material/weather-night # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
     - scheme: slate # 夜间模式
-      primary: indigo
-      accent: orange
+      primary: purple # 主题颜色
+      accent: pink
       toggle:
         icon: material/weather-sunny
         name: 切换至日间模式
-  features:
+  features: # 页面的一些特性
     - navigation.tabs # 使用Tab来进行分类
+    - navigation.tabs.sticky # 保保持Tab显示
+    - navigation.instant # 页面即时加载
     - navigation.top # 返回顶部的按钮 在上滑时出现
     - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
-    - navigation.prune # 打开Tab时左侧目录全部展开
+    #- navigation.expande # 打开Tab时左侧目录全部展开
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
     - content.code.copy # 可以通过按钮复制代码
+    - content.action.edit # 编辑页面
+    - content.action.view # 查看页面源代码
+    - toc.follow # 目录锚点跟踪
   language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 ## [top-right corner]
 repo_url: https://github.com/William-Rabbit/William-Rabbit.github.io # 右上角点击跳转的链接
@@ -360,7 +366,13 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/William-Rabbit
       name: GitHub | William-Rabbit
-
+  alternate: # 设置多种语言切换
+    -name: 中文 #语言名称
+      link: /zh/ # 链接
+      lang: zh # 对应语言代码
+    -name: English
+      link: /en/
+      lang: en
 # [Extensions]
 
 plugins:
@@ -370,6 +382,8 @@ plugins:
         - en
         - ja
   #- tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
+  - git-revision-date-localized:
+    enabled_creation_date: true
 markdown_extensions:
   - pymdownx.arithmatex: # latex支持
       generic: true
