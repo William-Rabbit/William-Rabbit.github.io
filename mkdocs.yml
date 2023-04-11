@@ -367,7 +367,7 @@ extra:
       link: https://github.com/William-Rabbit
       name: GitHub | William-Rabbit
   alternate: # 设置多种语言切换
-    -name: English #语言名称
+    - name: English #语言名称
       link: /en/ # 链接
       lang: en # 对应语言代码
 # [Extensions]
