@@ -22,5 +22,5 @@ jobs: # 工作流的具体内容
       - run: git branch gh-deploy
       - run: git checkout gh-deploy
       - run: git add .
-      - run: git commit-m "rebuild"
+      - run: git commit -m "rebuild"
         
