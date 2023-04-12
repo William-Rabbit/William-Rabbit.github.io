@@ -17,6 +17,6 @@ jobs: # 工作流的具体内容
 
       - run: pip install mkdocs-material # 使用pip包管理工具安装mkdocs-material
       - run: pip install mkdocs-git-revision-date-localized-plugin # 安装文档日期插件
-      - run: mkdocs gh-deploy --force -d ./zh # 使用mkdocs-material部署gh-pages分支
+      - run: mkdocs gh-deploy -d ./zh # 使用mkdocs-material部署gh-pages分支
         working-directory: ./zh
         
