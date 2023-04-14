@@ -315,7 +315,6 @@ site_description: Rabbit的个人网站
 #     - 测试文档: ABOUT/test.md
 
 nav:
-  - index.md
   - 日志: 
     - BLOG/index.md
   - 学习:
