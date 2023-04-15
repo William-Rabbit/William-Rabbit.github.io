@@ -1,6 +1,6 @@
 # [Info]
 site_name: Rabbit的个人网站 # 左上角标题
-site_url: https://William-Rabbit.github.io/zh/
+site_url: https://192.168.0.158/
 site_author: Rabbit
 site_description: Rabbit的个人网站
 
@@ -306,23 +306,46 @@ site_description: Rabbit的个人网站
 #     - REPRODUCE/how-to-ask-questions-the-smart-way.md
 #     - REPRODUCE/tim-cook-at-duke.md
 #     - REPRODUCE/my-best-teacher.md
-#   - 关于:
-#     - ABOUT/index.md # 使用两个index 这样子左上角第一次打开会是所有Tab 而不是ABOUT
-#     - 个人履历: ABOUT/cv-full.md
-#     - 支持作者: ABOUT/support.md
-#     - 文章编写帮助: ABOUT/help.md
-#     - 网站构建: ABOUT/build.md
-#     - 测试文档: ABOUT/test.md
+  # - 关于:
+    # - ABOUT/index.md # 使用两个index 这样子左上角第一次打开会是所有Tab 而不是ABOUT
+    # - 个人履历: ABOUT/cv-full.md
+    # - 支持作者: ABOUT/support.md
+    # - 文章编写帮助: ABOUT/help.md
+    # - 网站构建: ABOUT/build.md
+    # - 测试文档: ABOUT/test.md
 
 nav:
   - 日志: 
     - BLOG/index.md
+    - 2023: 
+      - BLOG/2023/index.md
+      - ggg: BLOG/2023/ggg.md
   - 学习:
     - STUDY/index.md
   - 拓展:
     - EXPAND/index.md
   - 资料:
     - FILE/index.md
+    - Markdown:
+      - FILE/markdown/index.md
+      - Markdown教程: FILE/markdown/tutorial.md
+    - ST芯片:
+      - FILE/ST/index.md
+      - Cube系列: 
+        - FILE/ST/Cube/index.md
+        - CubeMX:
+          - FILE/ST/Cube/MX/index.md
+          - 教程: FILE/ST/Cube/MX/tutorial.md
+        - CubeProgrammer:
+          - FILE/ST/Cube/Programmer/index.md
+          - 教程: FILE/ST/Cube/Programmer/tutorial.md
+        - CubeIDE: 
+          - FILE/ST/Cube/IDE/index.md
+          - 教程: FILE/ST/Cube/IDE/tutorial.md
+      - F1系列:
+        - FILE/ST/F1/index.md
+        - HAL&LL: FILE/ST/F1/HALLL.md
+        - 入门教程: FILE/ST/F1/tutorial.md
   - 娱乐:
     - AMUSE/index.md
   - 其他:
@@ -353,7 +376,8 @@ theme: # 主题
     - navigation.instant # 页面即时加载
     - navigation.top # 返回顶部的按钮 在上滑时出现
     - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
-    #- navigation.expande # 打开Tab时左侧目录全部展开
+    # - navigation.expande # 打开Tab时左侧目录全部展开
+    # - navigation.path
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
     - content.code.copy # 可以通过按钮复制代码
