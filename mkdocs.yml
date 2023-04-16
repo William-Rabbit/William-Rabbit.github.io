@@ -357,9 +357,6 @@ nav:
     - OTHER/index.md
   - 关于:
     - ABOUT/index.md
-  - 标记:
-    - TAGS/index.md
-    - Markdown: TAGS/mk.md
 
 # [UI]
 ## [top]
@@ -431,9 +428,9 @@ extra:
   #     link: /de/
   #     lang: de
   homepage: https://William-Rabbit.github.io
-  tags:
-    Markdown: mk
-    Tutorial: jc
+  # tags:
+  #   Markdown: mk
+  #   Tutorial: jc
 
 # [Extensions]
 
@@ -443,9 +440,8 @@ plugins:
       lang:
         - en
         - ja
-  - tags: 
-      tags_file: 
-        TAGS/index.md
+  # - tags: 
+  #     tags_file: TAGS/index.md
 
   #- tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
   # - git-revision-date-localized: # 添加版本插件
