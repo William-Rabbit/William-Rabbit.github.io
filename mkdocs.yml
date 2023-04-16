@@ -330,28 +330,36 @@ nav:
       - FILE/markdown/index.md
       - Markdown教程: FILE/markdown/tutorial.md
     - ST芯片:
-      - FILE/ST/index.md
+      - FILE/st/index.md
       - Cube系列: 
-        - FILE/ST/Cube/index.md
+        - FILE/st/Cube/index.md
         - CubeMX:
-          - FILE/ST/Cube/MX/index.md
-          - 教程: FILE/ST/Cube/MX/tutorial.md
+          - FILE/st/Cube/MX/index.md
+          - 教程: FILE/st/Cube/MX/tutorial.md
         - CubeProgrammer:
-          - FILE/ST/Cube/Programmer/index.md
-          - 教程: FILE/ST/Cube/Programmer/tutorial.md
+          - FILE/st/Cube/Programmer/index.md
+          - 教程: FILE/st/Cube/Programmer/tutorial.md
         - CubeIDE: 
-          - FILE/ST/Cube/IDE/index.md
-          - 教程: FILE/ST/Cube/IDE/tutorial.md
+          - FILE/st/Cube/IDE/index.md
+          - 教程: FILE/st/Cube/IDE/tutorial.md
       - F1系列:
-        - FILE/ST/F1/index.md
-        - HAL&LL: FILE/ST/F1/HALLL.md
-        - 入门教程: FILE/ST/F1/tutorial.md
+        - FILE/st/F1/index.md
+        - HAL&LL: FILE/st/F1/HALLL.md
+        - 入门教程: FILE/st/F1/tutorial.md
+    - Arduino:
+      - FILE/arduino/index.md
+      - 入门教程: FILE/arduino/tutorial.md
+      - ArduinoIDE使用: FILE/arduino/ide.md
+      - Arduino基础: FILE/arduino/base.md
   - 娱乐:
     - AMUSE/index.md
   - 其他:
     - OTHER/index.md
   - 关于:
     - ABOUT/index.md
+  - 标记:
+    - TAGS/index.md
+    - Markdown: TAGS/mk.md
 
 # [UI]
 ## [top]
@@ -376,27 +384,35 @@ theme: # 主题
     - navigation.instant # 页面即时加载
     - navigation.top # 返回顶部的按钮 在上滑时出现
     - navigation.indexes # Tab会有一个index.md 而不是在打开Tab时打开第一篇文章
-    # - navigation.expande # 打开Tab时左侧目录全部展开
-    # - navigation.path
+    # - navigation.footer
+    # - navigation.expande # 打开Tab时左侧目录全部展开 
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
+    - search.share # 搜索链接分享
+    # - header.autohide # 向下滚动一定后自动隐藏页面顶部
     - content.code.copy # 可以通过按钮复制代码
     - content.action.edit # 编辑页面
     - content.action.view # 查看页面源代码
     - toc.follow # 目录锚点跟踪
   language: zh # 一些提示性的文字会变成中文
+  favicon: img/rabbit.svg
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil
     view: material/eye
+    logo: material/rabbit
+    tag:
+      mk: simple/markdown
 edit_uri: edit/main/docs # 编辑按钮跳转的链接
 ## [top-right corner]
 repo_url: https://github.com/William-Rabbit/William-Rabbit.github.io # 右上角点击跳转的链接
 repo_name: William-Rabbit.github.io # 右上角的名字
 ## [bottom-left corner]
-copyright: Rabbit CC-BY-4.0 # 左下角的版权声明
+copyright: Copyright &copy; 2023 William-Rabbit
+# copyright: Rabbit CC-BY-4.0 # 左下角的版权声明
 ## [bottom-right corner]
 extra:
+  # generator: false # 删除左下角页面生成标识
   social: # icons
     - icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/32598453
@@ -414,6 +430,10 @@ extra:
   #   - name: Deutsch
   #     link: /de/
   #     lang: de
+  homepage: https://William-Rabbit.github.io
+  tags:
+    Markdown: mk
+    Tutorial: jc
 
 # [Extensions]
 
@@ -423,23 +443,62 @@ plugins:
       lang:
         - en
         - ja
+  - tags: 
+      tags_file: 
+        TAGS/index.md
+
   #- tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
   # - git-revision-date-localized: # 添加版本插件
   #     enable_creation_date: true # 启用创建和最后更新的显示
 
+# markdown_extensions:
+#   - pymdownx.arithmatex: # latex支持
+#       generic: true
+#   - attr_list # 给图片后面添加{width="300"}设置大小
+#   - toc:
+#       permalink: true # 固定标题位置为当前位置
+#   - pymdownx.highlight: # 代码块高亮
+#       # linenums: true # 显示行号
+#       # auto_title: true # 显示编程语言名称
+#   - pymdownx.superfences # 代码块高亮插件
+#   - meta # 支持Markdown文件上方自定义标题标签等
+#   - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#inline-blocks
+#   - pymdownx.details # admonition需要
+
 markdown_extensions:
-  - pymdownx.arithmatex: # latex支持
-      generic: true
-  - attr_list # 给图片后面添加{width="300"}设置大小
+
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
   - toc:
-      permalink: true # 固定标题位置为当前位置
-  - pymdownx.highlight: # 代码块高亮
-      # linenums: true # 显示行号
-      # auto_title: true # 显示编程语言名称
-  - pymdownx.superfences # 代码块高亮插件
-  - meta # 支持Markdown文件上方自定义标题标签等
-  - admonition # https://squidfunk.github.io/mkdocs-material/reference/admonitions/#inline-blocks
-  - pymdownx.details # admonition需要
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
 
 extra_javascript:
   # latex支持
@@ -448,6 +507,6 @@ extra_javascript:
   - mkdocs/javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js # https://cdn.bytedance.com/?query=mathjax&version=3.2.0
-extra_css:
-  - mkdocs/css/no-footer.css # 不使用底部的翻页
-  - mkdocs/css/unordered-list-symbols.css # multiplt unordered list symbols
+# extra_css:
+#   - mkdocs/css/no-footer.css # 不使用底部的翻页
+#   - mkdocs/css/unordered-list-symbols.css # multiplt unordered list symbols
