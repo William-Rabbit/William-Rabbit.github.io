@@ -319,7 +319,8 @@ nav:
     - BLOG/index.md
     - 2023: 
       - BLOG/2023/index.md
-      - ggg: BLOG/2023/ggg.md
+      - 日常记录: BLOG/2023/daily.md
+    - 网站更新记录: BLOG/update.md
   - 学习:
     - STUDY/index.md
   - 拓展:
@@ -329,6 +330,12 @@ nav:
     - Markdown:
       - FILE/markdown/index.md
       - Markdown教程: FILE/markdown/tutorial.md
+    - MkDocs:
+      - FILE/mkdocs/index.md
+      - 使用教程: FILE/mkdocs/tutorial.md
+    - Material for MkDocs:
+      - FILE/material/index.md
+      - 使用教程: FILE/material/tutorial.md
     - ST芯片:
       - FILE/st/index.md
       - Cube系列: 
@@ -357,6 +364,7 @@ nav:
     - OTHER/index.md
   - 关于:
     - ABOUT/index.md
+    - 网站简介: ABOUT/introduction.md
 
 # [UI]
 ## [top]

@@ -6,7 +6,6 @@ tags:
 
 # markdown教程
 
-[toc]
 
 ## 1. 标题
 markdown同HTML一样，支持六个等级标题。有两种标记方式:
