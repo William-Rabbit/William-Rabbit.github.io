@@ -6,7 +6,7 @@
 
 如果你对创建这样的一个网站感兴趣，可以参考以下的一些教程，这些文章分别记录了我创建这个网站时的一个学习过程，以及自己遇到的一些问题和困难。
 
-- [MarkDown](../FILE/markdown/tutorial.md)
+- [MarkDown](../FILE/program/markdown/tutorial.md)
 - [MkDocs](../FILE/mkdocs/tutorial.md)
 - [Material for MkDocs](../FILE/material/tutorial.md)
 

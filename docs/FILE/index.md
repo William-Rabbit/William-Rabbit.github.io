@@ -2,7 +2,7 @@
 
 当前资料有以下几个大类:
 
-- [Markdown](markdown): 轻量级标记语言,也是本网站制作使用的语言
+- [编程语言](program): 各种编程语言
 - [MkDocs](mkdocs): 制作该网页的工具
 - [Material for MkDocs](material): 美化网站的主题
 - [ST芯片](st): 微控制芯片STM相关

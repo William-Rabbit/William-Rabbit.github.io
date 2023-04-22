@@ -327,9 +327,11 @@ nav:
     - EXPAND/index.md
   - 资料:
     - FILE/index.md
-    - Markdown:
-      - FILE/markdown/index.md
-      - Markdown教程: FILE/markdown/tutorial.md
+    - 编程语言:
+      - FILE/program/index.md
+      - Markdown:
+        - FILE/program/markdown/index.md
+        - Markdown教程: FILE/program/markdown/tutorial.md
     - MkDocs:
       - FILE/mkdocs/index.md
       - 使用教程: FILE/mkdocs/tutorial.md
@@ -365,6 +367,7 @@ nav:
   - 关于:
     - ABOUT/index.md
     - 网站简介: ABOUT/introduction.md
+    - 网站更新目标: ABOUT/target.md
 
 # [UI]
 ## [top]
