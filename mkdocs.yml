@@ -351,10 +351,13 @@ nav:
         - CubeIDE: 
           - FILE/st/Cube/IDE/index.md
           - 教程: FILE/st/Cube/IDE/tutorial.md
+        - HAL:
+          - FILE/st/Cube/HAL/index.md
+          - HAL: FILE/st/Cube/HAL/HAL.md
+          - LL: FILE/st/Cube/HAL/LL.md
       - F1系列:
-        - FILE/st/F1/index.md
-        - HAL&LL: FILE/st/F1/HALLL.md
-        - 入门教程: FILE/st/F1/tutorial.md
+        - FILE/st/device/index.md
+        - 入门教程: FILE/st/device/tutorial.md
     - Arduino:
       - FILE/arduino/index.md
       - 入门教程: FILE/arduino/tutorial.md
