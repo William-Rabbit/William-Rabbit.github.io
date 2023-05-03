@@ -325,6 +325,7 @@ nav:
     - STUDY/index.md
   - 拓展:
     - EXPAND/index.md
+    - 状态机: EXPAND/FSM.md
   - 资料:
     - FILE/index.md
     - 编程语言:
@@ -351,13 +352,24 @@ nav:
         - CubeIDE: 
           - FILE/st/Cube/IDE/index.md
           - 教程: FILE/st/Cube/IDE/tutorial.md
+        - CubeMonitor:
+          - FILE/st/Cube/Monitor/index.md
         - HAL:
           - FILE/st/Cube/HAL/index.md
-          - HAL: FILE/st/Cube/HAL/HAL.md
-          - LL: FILE/st/Cube/HAL/LL.md
-      - F1系列:
+          - HAL: 
+            - FILE/st/Cube/HAL/hal/index.md
+            - HAL库文件: FILE/st/Cube/HAL/hal/hal.md
+          - LL: 
+            - FILE/st/Cube/HAL/ll/index.md
+            - LL库文件: FILE/st/Cube/HAL/ll/ll.md
+          - Core drivers:
+            - FILE/st/Cube/HAL/cd/index.md
+            - Core drivers文件: FILE/st/Cube/HAL/cd/cd.md
+      - 硬件芯片:
         - FILE/st/device/index.md
         - 入门教程: FILE/st/device/tutorial.md
+      - 其他:
+        - FILE/st/other/compare.md
     - Arduino:
       - FILE/arduino/index.md
       - 入门教程: FILE/arduino/tutorial.md
@@ -367,6 +379,7 @@ nav:
     - AMUSE/index.md
   - 其他:
     - OTHER/index.md
+    - 网站编写注意事项: OTHER/attention.md
   - 关于:
     - ABOUT/index.md
     - 网站简介: ABOUT/introduction.md
@@ -456,6 +469,7 @@ plugins:
         - ja
   # - tags: 
   #     tags_file: TAGS/index.md
+  - glightbox
 
   #- tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
   # - git-revision-date-localized: # 添加版本插件
