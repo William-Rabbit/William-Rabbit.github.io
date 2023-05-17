@@ -375,6 +375,11 @@ nav:
       - 入门教程: FILE/arduino/tutorial.md
       - ArduinoIDE使用: FILE/arduino/ide.md
       - Arduino基础: FILE/arduino/base.md
+    - IDE:
+      - FILE/ide/index.md
+      - Keil:
+        - FILE/ide/keil/index.md
+        - 配置向导: FILE/ide/keil/configwizard.md
   - 娱乐:
     - AMUSE/index.md
   - 其他:
